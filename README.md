@@ -42,6 +42,7 @@ Ao explorar este projeto, você encontrará os seguintes recursos e tópicos de 
 2. Importe o projeto no Eclipse ou Visual Studio Code, dependendo da sua preferência de ambiente de desenvolvimento.
 3. Exporte o formulário form_cadastroPessoas01 para o servidor, seguindo as orientações da documentação [Exportando formulários](https://tdn.totvs.com/pages/releaseview.action?pageId=239018344#samples-3).
 4. Exporte o dataset avançado *crud_cadastroPessoas01* para o servidor. Ao fazer isso, preste atenção nos seguintes tópicos:
+
    a. Verifique se o valor da variável **datasetForm** no dataset corresponde exatamente ao código do dataset exportado no item 3.
 
    b. No final do dataset, há uma função construtora chamada **getWebServiceFluig**. Informe as credenciais de acesso de um usuário do seu ambiente.
