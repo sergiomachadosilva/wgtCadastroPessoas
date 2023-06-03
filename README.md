@@ -54,9 +54,9 @@ Ao explorar este projeto, você encontrará os seguintes recursos e tópicos de 
 6. Após exportar a widget, crie uma nova página seguindo as orientações da documentação [Criar página](https://tdn.totvs.com/pages/releaseview.action?pageId=234455933). Adicione a widget em algum slot do layout e publique a página.
 
 
-## Capturas de Tela
+## Capturas de Telas
 
-A seguir, estão algumas capturas de tela da widget em diferentes etapas do CRUD:
+A seguir, estão algumas capturas de telas da widget em diferentes etapas do CRUD:
 
 *Figura 1: Tela de listagem dos registros.*
 ![Tela de Listagem dos Registros](https://github.com/sergiomachadosilva/wgtCadastroPessoas/blob/master/forms/form_cadastroPessoas01/listagem_registros.png)
@@ -64,9 +64,8 @@ A seguir, estão algumas capturas de tela da widget em diferentes etapas do CRUD
 *Figura 2: Tela de criação de um novo registro.*
 ![Tela de Criação de um novo Registro](https://github.com/sergiomachadosilva/wgtCadastroPessoas/blob/master/forms/form_cadastroPessoas01/modal_criacao_registro.png)
 
-![Tela de Visualização de um Registro Específico](https://github.com/sergiomachadosilva/wgtCadastroPessoas/blob/master/forms/form_cadastroPessoas01/modal_visualizacao_registro.png)
-
 *Figura 3: Tela de visualização de um registro específico.*
+![Tela de Visualização de um Registro Específico](https://github.com/sergiomachadosilva/wgtCadastroPessoas/blob/master/forms/form_cadastroPessoas01/modal_visualizacao_registro.png)
 
 *Figura 4: Tela de edição de um registro específico.*
 ![Tela de Edição de um Registro Específico](https://github.com/sergiomachadosilva/wgtCadastroPessoas/blob/master/forms/form_cadastroPessoas01/modal_edicao_registro.png)
