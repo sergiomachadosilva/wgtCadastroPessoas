@@ -37,6 +37,22 @@ Ao explorar este projeto, você encontrará os seguintes recursos e tópicos de 
 - Filtragem de registros de um formulário com base em um intervalo de datas;
 - Geração de relatório com PDFMake.
 
+## Instalação
+1. Faça o download deste repositório para o seu ambiente local.
+2. Importe o projeto no Eclipse ou Visual Studio Code, dependendo da sua preferência de ambiente de desenvolvimento.
+3. Exporte o formulário form_cadastroPessoas01 para o servidor, seguindo as orientações da documentação [Exportando formulários](https://tdn.totvs.com/pages/releaseview.action?pageId=239018344#samples-3).
+4. Exporte o dataset avançado *crud_cadastroPessoas01* para o servidor. Ao fazer isso, preste atenção nos seguintes tópicos:
+   1. Verifique se o valor da variável **datasetForm** no dataset corresponde exatamente ao código do dataset exportado no item 3.
+
+   2. No final do dataset, há uma função construtora chamada **getWebServiceFluig**. Informe as credenciais de acesso de um usuário do seu ambiente.
+
+   3. Verifique se os serviços SOAP 'ECMCardService' e 'ECMDocumentService' estão cadastrados no seu ambiente. Se estiverem cadastrados com um código diferente, altere os métodos **getCardService** e **getDocumentService**.
+
+5. Exporte sua Widget para o servidor Fluig. Antes de fazer a exportação, verifique se a propriedade 'datasetCrud' no arquivo JS principal da widget contém o valor do código do dataset avançado exportado no item 4
+
+6. Após exportar a widget, crie uma nova página seguindo as orientações da documentação [Criar página](https://tdn.totvs.com/pages/releaseview.action?pageId=234455933). Adicione a widget em algum slot do layout e publique a página.
+
+
 ## Capturas de Tela
 
 A seguir, estão algumas capturas de tela da widget em diferentes etapas do CRUD:
