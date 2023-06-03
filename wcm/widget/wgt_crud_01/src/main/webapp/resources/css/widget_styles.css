@@ -1,0 +1,258 @@
+#visualizacaoPagina .layout-1-1{
+	margin-bottom: 10px;
+}
+
+#visualizacaoPagina h2.pageTitle{
+	color: #58595b;
+    font-size: 28px;
+    margin-top: 0px;
+}
+
+.wcm-all-content .wcm_widget{
+	padding: 0px;
+	margin: 0px;
+}
+
+ /* Custom panel */
+.fluig-style-guide .panel-custom{
+	border: solid 1px #1eaad9!important;
+}
+
+.fluig-style-guide .panel-custom.panel-fullscreen{
+	border: solid 1px #FFF!important;
+    display: block;
+    border-radius: 0;
+    z-index: 1060;
+    position: fixed;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+.fluig-style-guide .panel-custom > .panel-heading{
+	border-bottom: 1px solid rgba(235, 237, 242);
+}
+
+.fluig-style-guide .panel-custom > .panel-heading .heading-elements{
+	background-color: inherit;
+	position: absolute;
+    top: 3px;
+    right: 5px;
+}
+
+.fluig-style-guide .panel-custom > .panel-heading .heading-elements button{
+	border: transparent;
+    background: none;
+}
+
+.fluig-style-guide .panel-custom > .panel-heading .heading-elements button:focus{
+	box-shadow: none;
+}
+
+.fluig-style-guide .panel-custom > .panel-heading .heading-elements button:focus-visible{
+	outline: none
+}
+
+#tabela td.count{
+	font-weight: bold;
+	text-align: center;
+}
+
+
+#toast-container > .toast {
+    opacity: 1 !important;
+}
+
+#toast-container .toast-title {
+    margin-bottom: 7px;
+}
+
+#toast-container .toast-message {
+    line-height: 1.25;
+}
+
+.swal2-container{
+	z-index: 1070;
+}
+.dataTables_wrapper .dataTables_empty p{
+	color: #58595b;	
+}
+
+.dataTables_wrapper .dt-buttons .btn{
+		transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+.dataTables_wrapper .dt-buttons .btn-sm{
+	padding: 3px 6px;
+}
+
+.dataTables_wrapper .dt-buttons .btn:focus{
+	outline: 0!important;
+}
+
+.dataTables_wrapper .dt-buttons .buttons-excel{
+	background-color: rgba(79,206,93,.1);
+    color: #4fce5d;
+}
+
+.dataTables_wrapper .dt-buttons .buttons-excel:hover, 
+.dataTables_wrapper .dt-buttons .buttons-excel:focus{
+	background-color: #4fce5d;
+    color: #fff;
+}
+
+.dataTables_wrapper .dt-buttons .btn-pdf{
+	background-color: rgba(196,48,43,.1);
+	color: #F44336;
+}
+
+.dataTables_wrapper .dt-buttons .btn-pdf:hover, 
+.dataTables_wrapper .dt-buttons .btn-pdf:focus{
+	background-color: #F44336;
+	color: #fff;
+}
+
+.dataTables_wrapper .dt-buttons .btn-atualizar{
+	background-color: rgba(18,165,244,.1);
+	color: #12a5f4;
+}
+
+.dataTables_wrapper .dt-buttons .btn-atualizar:hover, 
+.dataTables_wrapper .dt-buttons .btn-atualizar:focus{
+	background-color: #12a5f4;
+	color: #fff;
+}
+
+.dataTables_wrapper tbody td{
+	padding: 6px 16px!important;
+}
+
+.dataTables_wrapper tbody td.btn-actions .btn{
+	padding: 2px 7px;
+}
+
+.dataTables_wrapper tbody td.btn-actions .btn i{
+	font-size: 16px;
+	top: 2px;
+}
+
+.fluig-style-guide .modal-body fieldset{
+	border: solid 1px #ccc;
+    padding: 10px 20px 15px;
+    margin-bottom: 30px;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+}
+.fluig-style-guide .modal-body fieldset > legend{
+	margin-bottom: 0;
+	width: initial;
+	padding: 0 10px;
+	border-bottom: none;
+	font-size: 13px;
+    font-weight: bold;
+    line-height: 24px;
+    background-color: #14ccb9;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.fluig-style-guide .modal-body table{
+	background-color: #FFF;
+}
+.fluig-style-guide .modal-body table{
+	margin-top: 10px;
+}
+
+.fluig-style-guide .modal-body table thead{
+	background-color: #14ccb9;
+}
+
+.fluig-style-guide .modal-body table thead th{
+	padding: 8px 16px!important;
+	color: #fff;
+}
+
+.fluig-style-guide .modal-body table thead th, 
+.fluig-style-guide .modal-body table tbody td,
+.fluig-style-guide .modal-body table tbody th{
+	border: solid 2px  #fff!important;
+}
+
+
+ /* Custom input-group */
+.fluig-style-guide .input-group.input-group-custom{
+	width: 100%;
+}
+
+.fluig-style-guide .input-group.input-group-custom .form-control{
+	border-right: none;
+	color: #07a;
+    font-weight: bold;
+}
+
+.fluig-style-guide .input-group.input-group-custom .input-group-addon{
+	color: #fff;
+	padding: 4px 7px;
+}
+
+.fluig-style-guide .input-group.input-group-custom .search{
+	border-color: #1eaad9;
+    background-color: #1eaad9;
+    border-right: 1px solid #fff;
+}
+
+.fluig-style-guide .input-group.input-group-custom .search:hover{
+	border-color: #088bb8;
+    background-color: #088bb8;
+    border-right: 1px solid #fff;
+}
+
+.fluig-style-guide .input-group.input-group-custom .trash{
+	border-color: #f64747;
+    background-color: #f64747;
+}
+
+.fluig-style-guide .input-group.input-group-custom .trash:hover{
+	border-color: #dc2f2f;
+    background-color: #dc2f2f;
+}
+
+ /* Custom dataTable users */
+#renderDataTable #datatable-area{
+	padding-top: 0;
+    padding-bottom: 0;
+}
+
+#renderDataTable .table>tbody>tr>td{
+	padding: 2px 16px;
+}
+
+#renderDataTable .table>tbody>tr>td.isSelected .flaticon-square-check{
+	display: none;
+}
+
+#renderDataTable .table>tbody>tr.success>td.isSelected .flaticon-square-check{
+	display: inline;
+}
+
+#renderDataTable .table>tbody>tr.success>td.isSelected .flaticon-square{
+	display: none;
+}
+
+
+ /* Custom icon trash */
+
+.fluig-style-guide .table>tbody>tr>td .btnLixeira i{
+	font-size: 20px;
+	opacity: 0.8;
+ 	transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+ 
+.fluig-style-guide .table>tbody>tr>td .btnLixeira i:hover{
+	transform: scale(1.2);
+	opacity: 1;
+}

@@ -1,0 +1,250 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="fluig-style-guide">
+		<form name="form" role="form">
+			<input type="hidden" id="campoDescritor" name="campoDescritor" />
+			<input type="hidden" id="dataCriacaoISO" name="dataCriacaoISO" />
+			<input type="hidden" id="uuid" name="uuid" />
+		
+			<div class="page-header">
+				<h2>Cadastro de Pessoas</h2>
+			</div>
+			
+			<div class="panel panel-info">
+				<div class="panel-heading">
+		            <h4 class="panel-title">
+		                Dados da Pessoa
+		            </h4>
+		        </div>
+		        <div class="panel-body">
+		        	<div class="row">
+		        		<div class="col-md-3">
+	        				<div class="form-group">
+								<label class="control-label">Nome</label>
+								<input type="text" class="form-control" name="nome" id="nome"/>
+							</div>
+		        		</div>
+		        		<div class="col-md-3">
+	        				<div class="form-group">
+								<label class="control-label">Profissão</label>
+								<input type="text" class="form-control" name="profissao" id="profissao"/>
+							</div>
+		        		</div>
+					    <div class="col-md-2">
+							<div class="form-group">
+								<label class="control-label">Nascimento</label> 
+								<div class="input-group">
+									<span class="input-group-addon">
+							            <i class="fluigicon fluigicon-calendar"></i>
+							        </span>
+									<input type="text" class="form-control" name="dataNascimento" id="dataNascimento" />
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group fs-lg-margin-top">
+								<label class="control-label">Exerce Atividade Remunerada?</label> 
+								<input type="checkbox" name="atividadeRemunerada" id="atividadeRemunerada" data-size="small" data-on-color="success" data-off-color="danger" data-on-text="Sim" data-off-text="Não">
+							</div>
+						</div>
+		        	</div>
+		        </div>
+			</div>
+			
+			<div class="panel panel-info fs-xl-margin-top">
+				<div class="panel-heading fs-sm-padding-top fs-sm-padding-bottom">
+					<h3 class="panel-title">
+						<b>Dependentes</b>
+					</h3>
+				</div>
+				<div class="panel-body fs-sm-margin-top">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="table-responsive">
+				       			<table class="table table-bordered" tablename="dependentes" nodeletebutton=true noaddbutton=true>
+					                <thead>
+					                    <tr>
+					                        <th class="text-center" style="width: 1%;">#</th>
+					                        <th>Nome</th>
+					                        <th>Matrícula</th>
+					                        <th>Login</th>
+					                        <th>E-mail</th>
+					                    </tr>
+					                </thead>
+									<tbody>
+										<tr>
+					                        <td class="fs-v-align-middle text-center fs-font-bold count" style="width: 1%;"></td>
+					                        <td class="fs-v-align-middle">
+						                        <div class="form-group fs-no-margin-bottom">
+						                            <input type="text" class="form-control input-sm" name="dependenteNome" />
+						                        </div>
+					                        </td>
+					                        <td  class="fs-v-align-middle">
+						                        <div class="form-group fs-no-margin-bottom">
+						                            <input type="text" class="form-control input-sm" name="dependenteMatricula" />
+						                        </div>
+					                        </td>
+					                         <td  class="fs-v-align-middle">
+						                        <div class="form-group fs-no-margin-bottom">
+						                            <input type="text" class="form-control input-sm" name="dependenteLogin" />
+						                        </div>
+					                        </td>
+					                        <td  class="fs-v-align-middle">
+						                        <div class="form-group fs-no-margin-bottom">
+						                            <input type="text" class="form-control input-sm" name="dependenteEmail" />
+						                        </div>
+					                        </td>
+										</tr>
+									</tbody>
+					       		</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="panel panel-info fs-xl-margin-top">
+				<div class="panel-heading fs-sm-padding-top fs-sm-padding-bottom">
+					<h3 class="panel-title">
+						<b>Endereços</b>
+					</h3>
+				</div>
+				<div class="panel-body fs-sm-margin-top">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="table-responsive">
+				       			<table class="table table-bordered" tablename="enderecos" nodeletebutton=true noaddbutton=true>
+					                <thead>
+					                    <tr>
+					                        <th class="text-center" style="width: 1%;">#</th>
+					                        <th>CEP</th>
+					                        <th>Endereço</th>
+					                        <th>Número</th>
+					                        <th>Bairro</th>
+					                        <th>Cidade</th>
+					                        <th>Estado</th>
+					                    </tr>
+					                </thead>
+									<tbody>
+										<tr>
+					                        <td class="fs-v-align-middle text-center fs-font-bold count" style="width: 1%;"></td>
+					                        <td class="fs-v-align-middle">
+						                        <div class="form-group fs-no-margin-bottom">
+						                            <input type="text" class="form-control input-sm" name="cep" />
+						                        </div>
+					                        </td>
+					                        <td  class="fs-v-align-middle">
+						                        <div class="form-group fs-no-margin-bottom">
+						                            <input type="text" class="form-control input-sm" name="endereco" />
+						                        </div>
+					                        </td>
+					                         <td  class="fs-v-align-middle">
+						                        <div class="form-group fs-no-margin-bottom">
+						                            <input type="text" class="form-control input-sm" name="numero" />
+						                        </div>
+					                        </td>
+					                        <td  class="fs-v-align-middle">
+						                        <div class="form-group fs-no-margin-bottom">
+						                            <input type="text" class="form-control input-sm" name="bairro" />
+						                        </div>
+					                        </td>
+					                        <td  class="fs-v-align-middle">
+						                        <div class="form-group fs-no-margin-bottom">
+						                            <input type="text" class="form-control input-sm" name="cidade" />
+						                        </div>
+					                        </td>
+					                        <td  class="fs-v-align-middle">
+						                        <div class="form-group fs-no-margin-bottom">
+						                            <select class="form-control input-sm" name="estado">
+						                            	<option value="" selected="selected">Selecione</option>
+														<option value="AC">Acre</option>
+														<option value="AL">Alagoas</option>
+														<option value="AP">Amapá</option>
+														<option value="AM">Amazonas</option>
+														<option value="BA">Bahia</option>
+														<option value="CE">Ceará</option>
+														<option value="DF">Distrito Federal</option>
+														<option value="ES">Espírito Santo</option>
+														<option value="GO">Goiás</option>
+														<option value="MA">Maranhão</option>
+														<option value="MT">Mato Grosso</option>
+														<option value="MS">Mato Grosso do Sul</option>
+														<option value="MG">Minas Gerais</option>
+														<option value="PA">Pará</option>
+														<option value="PB">Paraíba</option>
+														<option value="PR">Paraná</option>
+														<option value="PE">Pernambuco</option>
+														<option value="PI">Piauí</option>
+														<option value="RJ">Rio de Janeiro</option>
+														<option value="RN">Rio Grande do Norte</option>
+														<option value="RS">Rio Grande do Sul</option>
+														<option value="RO">Rondônia</option>
+														<option value="RR">Roraima</option>
+														<option value="SC">Santa Catarina</option>
+														<option value="SP">São Paulo</option>
+														<option value="SE">Sergipe</option>
+														<option value="TO">Tocantins</option>
+													</select>
+						                        </div>
+					                        </td>
+										</tr>
+									</tbody>
+					       		</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+					        	
+        	<div class="row fs-xxl-margin-top">
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="control-label">Criado Por</label>
+								<input type="hidden" name="criacaoUserCode" id="criacaoUserCode"/>
+								<input type="text" class="fs-full-width fs-no-style-input" name="criacaoUserNome" id="criacaoUserNome"/>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="control-label">Criado Em</label>
+								<input type="text" class="fs-full-width fs-no-style-input" name="criacaoData" id="criacaoData"/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="control-label">Alterado Por</label>
+								<input type="hidden" name="atualizacaoUserCode" id="atualizacaoUserCode"/>
+								<input type="text" class="fs-full-width fs-no-style-input" name="atualizacaoUserNome" id="atualizacaoUserNome"/>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="control-label">Alterado Em</label>
+								<input type="text" class="fs-full-width fs-no-style-input" name="atualizacaoData" id="atualizacaoData"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</form>
+	</div>
+	
+	<script type="text/javascript" src="custom.js"></script>
+</body>
+</html>
